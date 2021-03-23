@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="photo" />
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,500|Mulish:600|Poppins:400|Sarabun:600");
+
+      .component-wrapper a,
+      .screen a {
+        text-decoration: none;
+        display: contents;
+      }
+
+      .full-width-a {
+        width: 100%;
+      }
+
+      .full-height-a {
+        height: 100%;
+      }
+
+      .screen textarea:focus,
+      .screen input:focus {
+        outline: none;
+      }
+
+      .screen *,
+      .component-wrapper * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .screen div {
+        -webkit-text-size-adjust: none;
+      }
+
+      .container-center-vertical,
+      .container-center-horizontal {
+        pointer-events: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container-center-vertical {
+        align-items: center;
+        height: 100%;
+      }
+
+      .container-center-horizontal {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container-center-vertical > *,
+      .container-center-horizontal > * {
+        pointer-events: auto;
+        flex-shrink: 0;
+      }
+
+      .component-wrapper,
+      .screen {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+      }
+
+      .auto-animated div {
+        opacity: 0;
+        position: absolute;
+        --z-index: -1;
+      }
+
+      .auto-animated .container-center-vertical,
+      .auto-animated .container-center-horizontal {
+        opacity: 1;
+      }
+
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        display: none;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+
+      .animate-appear {
+        opacity: 0;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 normal forwards;
+      }
+
+      .animate-disappear {
+        opacity: 1;
+        display: block;
+        animation: reveal 0.3s ease-in-out 1 reverse forwards;
+      }
+
+      .animate-nodelay {
+        animation-delay: 0s;
+      }
+
+      @keyframes reveal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .align-self-flex-start {
+        align-self: flex-start;
+      }
+      .align-self-flex-end {
+        align-self: flex-end;
+      }
+      .align-self-flex-center {
+        align-self: center;
+      }
+      .valign-text-middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .valign-text-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      input:focus {
+        outline: none;
+      }
+      .component-wrapper,
+      .component-wrapper * {
+        pointer-events: none;
+      }
+
+      .component-wrapper a *,
+      .component-wrapper a,
+      .component-wrapper input,
+      .component-wrapper video,
+      .component-wrapper iframe,
+      .listeners-active,
+      .listeners-active * {
+        pointer-events: auto;
+      }
+
+      .hidden,
+      .hidden * {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .smart-layers-pointers,
+      .smart-layers-pointers * {
+        pointer-events: auto;
+        visibility: visible;
+      }
+
+      .component-wrapper.not-ready,
+      .component-wrapper.not-ready * {
+        visibility: hidden !important;
+      }
+
+      .listeners-active-click,
+      .listeners-active-click * {
+        cursor: pointer;
+      }
+    </style>
+    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
+  </head>
+  <body style="margin: 0">
+    <input type="hidden" id="anPageName" name="page" value="dashboard" />
+    <div class="dashboard screen">
+      <div class="mlife-C61RwL">Mlife</div>
+      <div class="icon-menu-C61RwL"><img class="vector-mq5UBQ" src="img/vector-32@2x.svg" /></div>
+      <div class="bars-status-bar-i-phone-light-C61RwL">
+        <div class="border-klngK9"></div>
+        <img class="cap-klngK9" src="img/cap-5@2x.svg" />
+        <div class="capacity-klngK9"></div>
+        <img class="wifi-klngK9" src="img/wifi-5@2x.svg" />
+        <img class="cellular-connection-klngK9" src="img/cellular-connection-5@2x.svg" />
+        <div class="bars-status-bar-hone-time-light-klngK9"><div class="time-s3dIGL">4:20</div></div>
+      </div>
+      <div class="briefcase-C61RwL"></div>
+      <div class="rectangle-12500-C61RwL"></div>
+      <img class="rectangle-12501-C61RwL" src="img/rectangle-12501@2x.svg" />
+      <img class="ellipse-354-C61RwL" src="img/ellipse-354@2x.svg" />
+      <img class="polygon-30-C61RwL" src="img/polygon-30@2x.svg" />
+      <img class="vector-C61RwL" src="img/vector-33@2x.svg" />
+      <img class="vector-VMr6Om" src="img/vector-34@2x.svg" />
+      <img class="vector-mzXdH9" src="img/vector-35@2x.svg" />
+      <img class="vector-QxM5SU" src="img/vector-36@2x.svg" />
+      <img class="polygon-32-C61RwL" src="img/polygon-32@2x.svg" />
+      <div class="briefcase-VMr6Om"></div>
+      <div class="my-business-C61RwL valign-text-middle">My Business</div>
+      <div class="overview-C61RwL valign-text-middle">overview</div>
+      <img class="white-base-C61RwL" src="img/white-base@1x.svg" />
+      <div class="container-C61RwL"></div>
+      <div class="products-C61RwL">Products</div>
+      <div class="home-C61RwL">Home</div>
+      <div class="container-VMr6Om"></div>
+      <div class="service-requests-C61RwL">Service Requests</div>
+      <div class="explore-C61RwL">Explore</div>
+      <img class="line-210-C61RwL" src="img/line-210@2x.svg" />
+      <div class="home-VMr6Om"><img class="rectangle-yzGlqo" src="img/rectangle@2x.svg" /></div>
+      <div class="shopping-bag-C61RwL">
+        <img class="vector-Y4c0SM" src="img/vector-38@2x.svg" />
+        <img class="vector-TZXXNz" src="img/vector-39@2x.svg" />
+        <img class="vector-7NI8PS" src="img/vector-40@2x.svg" />
+      </div>
+      <img class="ellipse-44-C61RwL" src="img/ellipse-44@2x.svg" />
+      <div class="search-24px-C61RwL">
+        <img class="ellipse-43-fgQfqY" src="img/ellipse-43@2x.svg" />
+        <img class="vector-28-fgQfqY" src="img/vector-28-1@2x.svg" />
+      </div>
+      <div class="iconly-light-send-C61RwL"><img class="send-WO8pPL" src="img/send@2x.svg" /></div>
+      <div class="rectangle-12447-C61RwL"></div>
+      <img class="vector-2P4qUJ" src="img/vector-41@2x.svg" />
+      <div class="wha-ts-happening-C61RwL">
+        <span class="span1-cJxAeg">W</span><span class="span2-cJxAeg">hat’</span><span class="span3-cJxAeg">s H</span
+        ><span class="span4-cJxAeg">appening?</span>
+      </div>
+      <img class="rectangle-14-C61RwL" src="img/rectangle-14@2x.svg" />
+      <img class="rectangle-15-C61RwL" src="img/rectangle-15@2x.svg" />
+      <img class="rectangle-16-C61RwL" src="img/rectangle-16@2x.svg" />
+      <img class="rectangle-17-C61RwL" src="img/rectangle-17@2x.svg" />
+      <div class="upto-50-off-C61RwL">Upto 50% off!</div>
+      <div class="see-corona-specific-plans-C61RwL">See Corona Specific Plans</div>
+      <div class="starting-ke-1000-only-C61RwL">
+        <span class="span1-azSgG7">S</span><span class="span2-azSgG7">tarting @ KE 1,000 only</span>
+      </div>
+      <div class="view-plans-C61RwL">View Plans</div>
+      <img class="arrow-right-C61RwL" src="img/arrow-right@2x.svg" />
+      <img class="xmlid-50-C61RwL" src="img/xmlid-50@2x.svg" />
+      <img class="xmlid-21-C61RwL" src="img/xmlid-21@2x.svg" />
+      <img class="xmlid-20-C61RwL" src="img/xmlid-20@2x.svg" />
+      <img class="xmlid-19-C61RwL" src="img/xmlid-19@2x.svg" />
+      <div class="how-can-we-help-C61RwL">How can we help?</div>
+      <div class="frame-1-C61RwL">
+        <img class="vector-WzCX2w" src="img/vector-42@2x.svg" />
+        <img class="vector-18YQQQ" src="img/vector-43@2x.svg" />
+        <img class="vector-Qvp4Tj" src="img/vector-44@2x.svg" />
+        <img class="vector-iAfY9J" src="img/vector-45@2x.svg" />
+        <img class="vector-w8P5Ff" src="img/vector-44@2x.svg" />
+        <img class="vector-WuPm0i" src="img/vector-44@2x.svg" />
+        <img class="vector-s9Rdmo" src="img/vector-44@2x.svg" />
+        <img class="vector-xPW5UG" src="img/vector-44@2x.svg" />
+        <img class="vector-IN1Lxi" src="img/vector-44@2x.svg" />
+        <img class="vector-7NxV0U" src="img/vector-51@2x.svg" />
+        <img class="vector-YlnNlK" src="img/vector-52@2x.svg" />
+        <img class="vector-xSSimX" src="img/vector-53@2x.svg" />
+        <img class="vector-bxA2lM" src="img/vector-54@2x.svg" />
+        <img class="vector-qXDylP" src="img/vector-55@2x.svg" />
+        <img class="vector-y5CxwP" src="img/vector-54@2x.svg" />
+        <img class="vector-d3jTx5" src="img/vector-57@2x.svg" />
+        <img class="vector-ngPnbx" src="img/vector-58@2x.svg" />
+        <img class="vector-8u9ELa" src="img/vector-59@2x.svg" />
+        <img class="vector-fHZ0xu" src="img/vector-60@2x.svg" />
+        <img class="vector-zJcnqQ" src="img/vector-61@2x.svg" />
+        <img class="vector-pmsoaK" src="img/vector-62@2x.svg" />
+        <img class="vector-M4aDLA" src="img/vector-63@2x.svg" />
+        <img class="vector-BxrLYe" src="img/vector-64@2x.svg" />
+        <img class="vector-KWS3PR" src="img/vector-65@2x.svg" />
+        <img class="vector-UED6q8" src="img/vector-66@2x.svg" />
+        <img class="vector-JlEgoX" src="img/vector-67@2x.svg" />
+        <img class="vector-DLuzGt" src="img/vector-68@2x.svg" />
+        <img class="vector-GOPHnf" src="img/vector-69@2x.svg" />
+        <img class="vector-cbPhEi" src="img/vector-70@2x.svg" />
+        <img class="vector-i3p5xz" src="img/vector-71@2x.svg" />
+        <img class="vector-86bxCW" src="img/vector-72@2x.svg" />
+        <img class="vector-xLRisg" src="img/vector-71@2x.svg" />
+        <img class="vector-VxKb2b" src="img/vector-74@2x.svg" />
+        <img class="vector-w8KiV9" src="img/vector-75@2x.svg" />
+        <img class="vector-NbjeQx" src="img/vector-76@2x.svg" />
+        <img class="vector-t2qG8Z" src="img/vector-77@2x.svg" />
+        <img class="vector-3ENn0G" src="img/vector-78@2x.svg" />
+        <img class="vector-hb0xvI" src="img/vector-79@2x.svg" />
+        <img class="vector-nnOgzw" src="img/vector-80@2x.svg" />
+        <img class="vector-8mJwAY" src="img/vector-81@2x.svg" />
+        <img class="vector-NPH6oJ" src="img/vector-82@2x.svg" />
+        <img class="vector-5vagm7" src="img/vector-83@2x.svg" />
+        <img class="vector-61oMk2" src="img/vector-84@2x.svg" />
+        <div class="i-want-to-make-a-request-WzCX2w roboto-medium-black-pearl-10px">I want to make a request</div>
+        <img class="arrow-right-WzCX2w" src="img/arrow-right-1@2x.svg" />
+      </div>
+      <div class="frame-6-C61RwL">
+        <img class="vector-dlCEa5" src="img/vector-43@2x.svg" />
+        <img class="vector-lvk72k" src="img/vector-44@2x.svg" />
+        <img class="vector-eLKs9k" src="img/vector-45@2x.svg" />
+        <img class="vector-z6B079" src="img/vector-44@2x.svg" />
+        <img class="vector-PiQhOG" src="img/vector-44@2x.svg" />
+        <img class="vector-TwgtJx" src="img/vector-51@2x.svg" />
+        <div class="i-want-to-make-payments-dlCEa5 roboto-medium-black-pearl-10px">I want to make payment(s</div>
+        <img class="arrow-right-dlCEa5" src="img/arrow-right-2@2x.svg" />
+        <div class="undrawplaincr-ditcardc8b8-3-dlCEa5">
+          <img class="vector-ejnd4r" src="img/vector-92@2x.svg" />
+          <img class="vector-6WXCfL" src="img/vector-93@2x.svg" />
+          <img class="vector-376C7V" src="img/vector-94@2x.svg" />
+          <img class="vector-WANZjv" src="img/vector-95@2x.svg" />
+          <img class="vector-RUHQO5" src="img/vector-96@2x.svg" />
+          <img class="vector-V5L5uc" src="img/vector-97@2x.svg" />
+          <img class="vector-IFvgjD" src="img/vector-98@2x.svg" />
+          <img class="vector-zo6uzX" src="img/vector-99@2x.svg" />
+        </div>
+      </div>
+      <div class="frame-7-C61RwL">
+        <div class="i-want-to-buy-cover-0sJeve roboto-medium-black-pearl-10px">I want to buy cover</div>
+        <img class="arrow-right-0sJeve" src="img/arrow-right-3@2x.svg" />
+        <div class="insurance-1-0sJeve">
+          <img class="vector-FUnIjO" src="img/vector-100@2x.svg" />
+          <img class="vector-7jNwO2" src="img/vector-101@2x.svg" />
+          <img class="vector-4vt7cH" src="img/vector-102@2x.svg" />
+          <img class="vector-KD1jNS" src="img/vector-103@2x.svg" />
+          <img class="vector-A0OsjV" src="img/vector-104@2x.svg" />
+          <img class="vector-uIvyiq" src="img/vector-105@2x.svg" />
+          <img class="vector-BT17VE" src="img/vector-106@2x.svg" />
+          <img class="vector-4exDrx" src="img/vector-107@2x.svg" />
+          <img class="vector-SJpHUb" src="img/vector-108@2x.svg" />
+        </div>
+      </div>
+      <div class="frame-3-C61RwL">
+        <div class="active-FY3HhL">Active</div>
+        <img class="vector-FY3HhL" src="img/vector-109@2x.svg" />
+        <img class="fill-1-FY3HhL" src="img/fill-1@2x.svg" />
+        <img class="fill-3-FY3HhL" src="img/fill-3@2x.svg" />
+        <img class="fill-11-FY3HhL" src="img/fill-11@2x.svg" />
+        <img class="fill-17-FY3HhL" src="img/fill-17@2x.svg" />
+        <img class="fill-19-FY3HhL" src="img/fill-19@2x.svg" />
+        <img class="fill-20-FY3HhL" src="img/fill-20@2x.svg" />
+        <div class="your-active-plans-FY3HhL roboto-medium-black-pearl-10px">Your active plans</div>
+        <img class="arrow-right-FY3HhL" src="img/arrow-right-3@2x.svg" />
+      </div>
+      <div class="frame-2-C61RwL">
+        <img class="vector-gUEd1c" src="img/vector-51@2x.svg" />
+        <div class="my-resources-and-downloads-gUEd1c roboto-medium-black-pearl-10px">My resources and downloads</div>
+        <img class="arrow-right-gUEd1c" src="img/arrow-right-2@2x.svg" />
+        <img class="vector-h9rsX8" src="img/vector-111@2x.svg" />
+        <img class="vector-vFHB0p" src="img/vector-112@2x.svg" />
+        <img class="vector-HLSage" src="img/vector-113@2x.svg" />
+        <img class="vector-hFKh6m" src="img/vector-114@2x.svg" />
+        <img class="vector-HqQahH" src="img/vector-115@2x.svg" />
+        <img class="vector-07tdfX" src="img/vector-116@2x.svg" />
+        <img class="vector-YuqMaO" src="img/vector-117@2x.svg" />
+        <img class="vector-xlUs2o" src="img/vector-118@2x.svg" />
+        <img class="vector-HI2gx1" src="img/vector-119@2x.svg" />
+        <img class="vector-br8Osr" src="img/vector-120@2x.svg" />
+        <img class="vector-z3vHhl" src="img/vector-121@2x.svg" />
+        <img class="vector-CDJGhA" src="img/vector-122@2x.svg" />
+        <img class="vector-ZYMZxV" src="img/vector-123@2x.svg" />
+        <img class="vector-sRTHPi" src="img/vector-124@2x.svg" />
+        <img class="vector-Cjkj6Q" src="img/vector-125@2x.svg" />
+        <img class="vector-XXHueM" src="img/vector-126@2x.svg" />
+        <img class="vector-xDePVk" src="img/vector-127@2x.svg" />
+        <img class="vector-NG2Y2n" src="img/vector-128@2x.svg" />
+        <img class="vector-rxGlad" src="img/vector-129@2x.svg" />
+        <img class="vector-hQiWGj" src="img/vector-130@2x.svg" />
+        <img class="vector-K7pT1t" src="img/vector-131@2x.svg" />
+        <img class="vector-PDHPxh" src="img/vector-132@2x.svg" />
+        <img class="vector-uJxOe2" src="img/vector-133@2x.svg" />
+        <img class="vector-pUbPzv" src="img/vector-134@2x.svg" />
+        <img class="vector-JfRxEA" src="img/vector-135@2x.svg" />
+        <img class="vector-9DdANy" src="img/vector-136@2x.svg" />
+        <img class="vector-f9CK1H" src="img/vector-137@2x.svg" />
+        <img class="vector-JxEHmO" src="img/vector-138@2x.svg" />
+        <img class="vector-F1uNlw" src="img/vector@2x.png" />
+      </div>
+      <div class="frame-4-C61RwL">
+        <div class="i-want-to-report-a-claim-61Z7WH roboto-medium-black-pearl-10px">I want to report a claim</div>
+        <img class="arrow-right-61Z7WH" src="img/arrow-right-2@2x.svg" />
+        <div class="claim-1-61Z7WH">
+          <img class="vector-wO9dKe" src="img/vector-140@2x.svg" />
+          <img class="vector-T2z9OT" src="img/vector-141@2x.svg" />
+          <img class="vector-SpRwxR" src="img/vector-142@2x.svg" />
+          <img class="vector-l5CF91" src="img/vector-143@2x.svg" />
+          <img class="vector-b5If7U" src="img/vector-144@2x.svg" />
+          <img class="vector-cr9Yec" src="img/vector-145@2x.svg" />
+          <img class="vector-qnvTCu" src="img/vector-146@2x.svg" />
+          <img class="vector-INTz8X" src="img/vector-147@2x.svg" />
+          <img class="vector-GWY1CY" src="img/vector-148@2x.svg" />
+          <img class="vector-jqjy7v" src="img/vector-149@2x.svg" />
+          <img class="vector-WXeH8f" src="img/vector-150@2x.svg" />
+          <img class="vector-KsF9FK" src="img/vector-151@2x.svg" />
+          <img class="vector-LsVim7" src="img/vector-152@2x.svg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
