@@ -1,242 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
-    <meta name="og:type" content="website" />
-    <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/register.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900,300,500|Mulish:600|Poppins:400|Sarabun:600");
+<html lang="en">
 
-      .component-wrapper a,
-      .screen a {
-        text-decoration: none;
-        display: contents;
-      }
+<head>
 
-      .full-width-a {
-        width: 100%;
-      }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      .full-height-a {
-        height: 100%;
-      }
 
-      .screen textarea:focus,
-      .screen input:focus {
-        outline: none;
-      }
+    <title>Home</title>
+    <!-- Turnkey logo -->
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialize" rel="stylesheet" type="text/css" />
 
-      .screen *,
-      .component-wrapper * {
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-      }
+</head>
 
-      .screen div {
-        -webkit-text-size-adjust: none;
-      }
+<body>
 
-      .container-center-vertical,
-      .container-center-horizontal {
-        pointer-events: none;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        margin: 0;
-      }
-
-      .container-center-vertical {
-        align-items: center;
-        height: 100%;
-      }
-
-      .container-center-horizontal {
-        justify-content: center;
-        width: 100%;
-      }
-
-      .container-center-vertical > *,
-      .container-center-horizontal > * {
-        pointer-events: auto;
-        flex-shrink: 0;
-      }
-
-      .component-wrapper,
-      .screen {
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        word-break: break-all;
-        word-break: break-word;
-      }
-
-      .auto-animated div {
-        opacity: 0;
-        position: absolute;
-        --z-index: -1;
-      }
-
-      .auto-animated .container-center-vertical,
-      .auto-animated .container-center-horizontal {
-        opacity: 1;
-      }
-
-      .overlay {
-        position: absolute;
-        opacity: 0;
-        display: none;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-      }
-
-      .animate-appear {
-        opacity: 0;
-        display: block;
-        animation: reveal 0.3s ease-in-out 1 normal forwards;
-      }
-
-      .animate-disappear {
-        opacity: 1;
-        display: block;
-        animation: reveal 0.3s ease-in-out 1 reverse forwards;
-      }
-
-      .animate-nodelay {
-        animation-delay: 0s;
-      }
-
-      @keyframes reveal {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      .align-self-flex-start {
-        align-self: flex-start;
-      }
-      .align-self-flex-end {
-        align-self: flex-end;
-      }
-      .align-self-flex-center {
-        align-self: center;
-      }
-      .valign-text-middle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .valign-text-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-      }
-      input:focus {
-        outline: none;
-      }
-      .component-wrapper,
-      .component-wrapper * {
-        pointer-events: none;
-      }
-
-      .component-wrapper a *,
-      .component-wrapper a,
-      .component-wrapper input,
-      .component-wrapper video,
-      .component-wrapper iframe,
-      .listeners-active,
-      .listeners-active * {
-        pointer-events: auto;
-      }
-
-      .hidden,
-      .hidden * {
-        visibility: hidden;
-        pointer-events: none;
-      }
-
-      .smart-layers-pointers,
-      .smart-layers-pointers * {
-        pointer-events: auto;
-        visibility: visible;
-      }
-
-      .component-wrapper.not-ready,
-      .component-wrapper.not-ready * {
-        visibility: hidden !important;
-      }
-
-      .listeners-active-click,
-      .listeners-active-click * {
-        cursor: pointer;
-      }
-    </style>
-    <meta name="author" content="AnimaApp.com - Design to code, Automated." />
-  </head>
-  <body style="margin: 0; background: rgba(255, 255, 255, 1)">
-    <input type="hidden" id="anPageName" name="page" value="register" />
-    <div class="container-center-horizontal">
-      <div class="register screen">
-        <div class="bars-status-bar-i-phone-light-C61RwL">
-          <div class="border-klngK9 border-1px-black"></div>
-          <img class="cap-klngK9" src="img/cap@2x.svg" />
-          <div class="capacity-klngK9"></div>
-          <img class="wifi-klngK9" src="img/wifi@2x.svg" />
-          <img class="cellular-connection-klngK9" src="img/cellular-connection@2x.svg" />
-          <div class="bars-status-bar-hone-time-light-klngK9">
-            <div class="time-s3dIGL roboto-black-black-15px">4:20</div>
-          </div>
+    <form class="reg">
+        <div class="d-flex align-items-start">
+            <img class="arrowback" src="img/svg/arrow_back.png">
         </div>
-        <div class="component-30-C61RwL"><img class="vector-1-02ks1v" src="img/vector-1@2x.svg" /></div>
-        <div class="component-31-C61RwL"></div>
-        <div class="register-now-C61RwL roboto-medium-black-16px">Register now!</div>
-        <img class="bg-C61RwL" src="img/bg@2x.svg" />
-        <img class="bg-VMr6Om" src="img/bg-1@2x.svg" />
-        <div class="surname-name-C61RwL roboto-normal-black-12px">Surname Name</div>
-        <div class="email-C61RwL roboto-normal-black-12px">Email</div>
-        <div class="date-of-birth-C61RwL roboto-normal-black-12px">Date of Birth</div>
-        <div class="country-C61RwL roboto-normal-black-12px">Country</div>
-        <div class="mobile-number-C61RwL roboto-normal-black-12px">Mobile Number</div>
-        <div class="other-names-C61RwL roboto-normal-black-12px">Other Names</div>
-        <div class="password-C61RwL roboto-normal-black-12px">Password</div>
-        <div class="doe-C61RwL roboto-medium-black-12px">Doe</div>
-        <div class="doegmailcom-C61RwL roboto-medium-black-12px">doe@gmail.com</div>
-        <div class="x02202020-C61RwL roboto-medium-black-12px">02/20/2020</div>
-        <div class="kenya-C61RwL roboto-medium-black-12px">Kenya</div>
-        <div class="x0740400444-C61RwL roboto-medium-black-12px">0740400444</div>
-        <div class="john-C61RwL roboto-medium-black-12px">John</div>
-        <div class="x-C61RwL roboto-medium-black-12px">************</div>
-        <img class="line-264-C61RwL" src="img/line-264@2x.svg" />
-        <img class="line-288-C61RwL" src="img/line-264@2x.svg" />
-        <img class="line-265-C61RwL" src="img/line-265@2x.svg" />
-        <img class="line-284-C61RwL" src="img/line-284@2x.svg" />
-        <img class="line-286-C61RwL" src="img/line-284@2x.svg" />
-        <img class="line-285-C61RwL" src="img/line-285@2x.svg" />
-        <img class="line-287-C61RwL" src="img/line-285@2x.svg" />
-        <img class="line-266-C61RwL" src="img/line-264@2x.svg" />
-        <img class="line-290-C61RwL" src="img/line-264@2x.svg" />
-        <img class="rectangle-12554-C61RwL" src="img/rectangle-12554@2x.svg" />
-        <img class="shape-C61RwL" src="img/shape@2x.svg" />
-        <img class="shape-VMr6Om" src="img/shape@2x.svg" />
-        <div class="dashiconswhatsapp-C61RwL"><img class="vector-fzxKVm" src="img/vector-27@2x.svg" /></div>
-        <div class="male-C61RwL">Male</div>
-        <div class="female-C61RwL">Female</div>
-        <div class="gender-C61RwL">Gender</div>
-        <img class="oval-C61RwL" src="img/oval-1@2x.svg" />
-        <div class="icons16px-check-C61RwL"><img class="path-y85ju1" src="img/path-1@2x.svg" /></div>
-        <img class="components-select-inactive-C61RwL" src="img/components-select-inactive-1@2x.svg" />
-        <div class="preferred-identification-mode-C61RwL roboto-normal-black-12px">Preferred Identification Mode</div>
-        <div class="mobile-C61RwL">Mobile</div>
-        <img class="arrow-ios-back-C61RwL" src="img/arrow-ios-back@2x.svg" />
-        <a href="register.html"><img class="rectangle-copy-C61RwL" src="img/rectangle-copy-1@2x.svg" /></a>
-        <a href="verification.html"> <div class="rectangle-12564-C61RwL"></div></a>
-        <div class="join-now-C61RwL roboto-medium-white-14px">Join Now</div>
-      </div>
-    </div>
-  </body>
+        <h2>Register now!</h1><br>
+
+            <div class="mb-3">
+                <label for="text" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="text" class="form-label">Other Names</label>
+                <input type="Text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="text" class="form-label">DOB</label>
+                <input type="Date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Country</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="Number" class="form-label">Mobile Number</label>
+                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+                <div>Preferred identification mode</div>
+
+                <a href="">
+                    <div>Mobile</div>
+                </a>
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">password</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+
+            <button class="cta_btn">
+            Submit
+          </button>
+    </form>
+
+</body>
+
 </html>
